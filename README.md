@@ -35,9 +35,7 @@ The project is split into four cooperating pieces: an **NLU model**, a **FastAPI
 
 ## 🏗️ Architecture
 
-<p align="center">
-  <img src="docs/architecture/System%20Architecture%20Diagram.png" alt="Squire System Architecture" width="850">
-</p>
+
 
 **Request flow:** `Mobile App → FastAPI /predict → NLU (ONNX) → Postprocessing → Decision Engine → Executor (Postgres/Redis) → n8n Automation → LLM Response Generator → Mobile App`
 
