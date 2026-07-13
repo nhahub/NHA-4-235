@@ -33,11 +33,33 @@ The project is split into four cooperating pieces: an **NLU model**, a **FastAPI
 
 ---
 
+---
+
+## 📱 Mobile App
+
+<p align="center">
+  <img src="screenshots/chat1.png" alt="AI Chat" width="220">
+  <img src="screenshots/chat2.png" alt="Conversation" width="220">
+  <img src="screenshots/Calendar1.png" alt="Calendar View" width="220">
+</p>
+
+<p align="center">
+  <img src="screenshots/Calendar2.png" alt="Calendar Event" width="220">
+  <img src="screenshots/Google Calendar.png" alt="Google Calendar Integration" width="220">
+  <img src="screenshots/email.png" alt="Email Reminder" width="220">
+</p>
+
+<p align="center">
+  <em>AI Assistant • Calendar • Google Calendar Integration • Email Reminders</em>
+</p>
+
+---
+
 ## 🏗️ Architecture
+
 <p align="center">
   <img src="docs/architecture/System%20Architecture%20Diagram.png" alt="Squire System Architecture" width="850">
 </p>
-
 
 **Request flow:** `Mobile App → FastAPI /predict → NLU (ONNX) → Postprocessing → Decision Engine → Executor (Postgres/Redis) → n8n Automation → LLM Response Generator → Mobile App`
 
